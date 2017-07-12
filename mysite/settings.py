@@ -86,9 +86,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'propupul$blog',
-        'USER': 'propupul',
-        'PASSWORD': 'D3wBw9va=8Pvqmgn6YZbW&)E[oy39s7$g7LpEA@vpkRx$Z8kMKBy,jDCn;.dM8YD',
-        'HOST': 'propupul.mysql.pythonanywhere-services.com',
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('PASSWORD'),
+        'HOST': os.environ.get('HOST'),
     }
 }
 
